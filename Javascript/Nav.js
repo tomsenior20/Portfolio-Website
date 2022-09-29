@@ -79,5 +79,4 @@ function getTime() {
     seconds = (seconds < 10 ? '0' : '') + seconds;
     var ampm = (hours < 12 ? 'AM' : 'PM');
     document.getElementById('timeContainer').innerHTML = `<p class='introText text-center my-3 py-2'>${hours}:${minutes}:${seconds}:${ampm}</p>`;
-
 };

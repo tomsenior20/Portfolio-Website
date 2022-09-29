@@ -29,10 +29,27 @@
     overflow: hidden;
 }
 
+.imageColumn{
+    padding:2rem;
+}
+
 .firstImage{
     height: 400px;
     width: 400px;
     padding: 3em;
     border-radius: 5em 3em 3em 4em;
+    border: 1px solid black;
 
+}
+
+@media  (min-width:200px) and (max-width:800px){
+    .imageColumn{
+        padding-right: calc(100vw - 1rem);
+        padding-left: calc(100vw - 1rem);
+    }
+    .firstImage{
+        width:200px;
+        height:200px;
+        margin: auto;
+    }
 }

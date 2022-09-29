@@ -1,0 +1,14 @@
+footer{
+    background-color: var(--navColour);
+    padding-top: calc(1vw + 1em);
+    padding-bottom: calc(1vw + 1em);
+}
+
+footer col{
+    width: calc(100vw / 2);
+}
+footer h2{
+    font-size: calc(1em + 1vmin);
+    padding: calc(0.5vh + 1vmin);
+    margin: 0;
+}
