@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./styling/default.css">
+    <link rel="stylesheet" href="./styling/pages/index.css">
+    <link rel="stylesheet" href="./styling/components/nav.css">
+</head>
+
+<body>
+    <nav id='navigation' class="container-fluid g-0">
+        <div class="row w-100 mx-auto row-cols-2">
+            <div class="navigationNameContainer col">
+                <h1 class="navigationName">Tom Senior</h1>
+            </div>
+            <div class="navigationListContainer col" id="navigationListContainer">
+                <!-- Dynamically created element -->
+            </div>
+        </div>
+        <div class="row w-100" id="mobilemenu" style="display:none">
+            <!-- Dynamically created -->
+        </div>
+    </nav>
+    <div class="firstSection">
+        <!-- Main content -->
+        <div class="containter-fluid test" id="test">
+            <div class="intoTextContainer">
+                <h1 class="text-center my-3 py-2 introText">Welcome</h1>
+            </div>
+            <div class="intoTextContainer" id='timeContainer'>
+                <!-- Time Injected -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="mainImageContainer">
+        <div class="container-fluid subImageContainer">
+            <div class="testcontaienr row">
+                <div class="col p-3">
+                    <img src="/images/idea.jpeg" alt="ideaImage" class="p-3 firstImage">
+                </div>
+                <div class="col p-3">
+                    <img src="/images/code.jpeg" alt="codeIamge" class="p-3 firstImage">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="nav.js"></script>
+</body>
+
+</html>

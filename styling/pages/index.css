@@ -1,0 +1,38 @@
+.firstSection{
+    background: radial-gradient(at left top, rgba(0, 93, 233, 0.904) 80%, #ffffff 20%);
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+.test{
+    padding:8em 0;
+    background: transparent;
+    overflow: hidden;
+}
+.intoTextContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+}
+.introText{
+    font-size: calc(3em + (2.4 - 2) * ((100vw - 250px) / (1500 - 300)));
+    font-family: sans-serif;
+    color: var(--colourText);
+}
+
+.mainImageContainer {
+    padding: 6em 0;
+}
+
+.subImageContainer{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.firstImage{
+    height: 400px;
+    width: 400px;
+    padding: 3em;
+    border-radius: 5em 3em 3em 4em;
+
+}

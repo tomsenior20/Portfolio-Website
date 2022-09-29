@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --homeColour: rgba(248, 248, 248, 0.9);
+    --navColour: rgba(5, 83, 201, 0.3);
+    --colourText: rgba(255, 255, 255, 0.9);
+}
+
+html, body{
+    background-color: var(--homeColour);
+    width: 100%;
+}
