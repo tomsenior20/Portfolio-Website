@@ -7,6 +7,12 @@ window.addEventListener('load', () => {
     setInterval(() => {
         getTime();
     }, 1000);
+
+    document.getElementById('hamburgermenu').addEventListener('click', () => {
+        setTimeout(() => {
+            mobileMenuButtonClick();
+        }, 100);
+    })
 });
 
 window.addEventListener('resize', () => {
@@ -33,7 +39,7 @@ setNavigationListDisplay = (currentscreensize) => {
         navigationListDisplayContainer.innerHTML = html;
     } else {
         const mobileinner = `
-            <button id="hamburgermenu" onclick=mobileMenuButtonClick()>
+            <button id="hamburgermenu">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -64,6 +70,7 @@ mobileMenuButtonClick = () => {
         </div>`;
     } else {
         menuStyle.style.display = 'none';
+        menuStyle.style.animation = 'opacityChangeAnimation 4s ease-out';
         mainContainerStyling.style.padding = '10em 0';
     }
 };
@@ -79,4 +86,4 @@ function getTime() {
     seconds = (seconds < 10 ? '0' : '') + seconds;
     var ampm = (hours < 12 ? 'AM' : 'PM');
     document.getElementById('timeContainer').innerHTML = `<p class='introText text-center my-3 py-2'>${hours}:${minutes}:${seconds}:${ampm}</p>`;
-};
+};;

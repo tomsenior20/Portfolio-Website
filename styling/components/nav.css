@@ -1,4 +1,4 @@
-nav{
+nav {
     position: fixed;
     top: 0;
     width: calc(100% - 1rem);
@@ -10,83 +10,99 @@ nav{
     overflow: hidden;
     z-index: 1;
 }
-#navigation{
+
+#navigation {
     display: flex;
     flex-direction: column;
 }
 
-.navigationNameContainer{
+.navigationNameContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
 }
-.navigationNameContainer h1{
-    font-size: calc(1.2rem  + (1.5 - 1.2) * ((100vw - 250px) / (2500 - 250)));
+
+.navigationNameContainer h1 {
+    font-size: calc(1.2rem + (1.5 - 1.2) * ((100vw - 250px) / (2500 - 250)));
     font-family: sans-serif;
     font-weight: 500;
     font-style: italic;
-    color:var(--colourText);
+    color: var(--colourText);
     line-height: 1.2;
 }
-.navigationNameContainer h1::first-letter{
+
+.navigationNameContainer h1::first-letter {
     font-size: 2.6rem;
     line-height: 1.2;
     color: var(--colourText);
 }
-.navigationListContainer{
+
+.navigationListContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
 }
-.navigationListContainer ul{
+
+.navigationListContainer ul {
     display: flex;
 }
-.navigationListContainer li{
+
+.navigationListContainer li {
     display: block;
     margin: 0 1rem;
-    color:var(--colourText);
+    color: var(--colourText);
     margin: 0 1em;
 }
-.navigationListContainer a{
+
+.navigationListContainer a {
     color: var(--colourText);
     text-decoration: none;
     font-family: sans-serif;
     font-weight: 500;
-    font-size: calc(1.3rem  + (1.8 - 1.2) * ((100vw - 250px) / (2500 - 250)));
+    font-size: calc(1.3rem + (1.8 - 1.2) * ((100vw - 250px) / (2500 - 250)));
     line-height: 1.2;
     font-style: italic;
 }
 
+
 /* Hamburger Menu css */
-#hamburgermenu{
+
+#hamburgermenu {
     background: none;
-    border:none;
-}
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: var(--colourText);
-  margin: 0.3em 0;
-  transition: 0.4s;
+    border: none;
 }
 
-.mobilemenulist{
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--colourText);
+    margin: 0.3em 0;
+    transition: 0.4s;
+}
+
+.mobilemenulist {
     background: var(--navColour);
     display: flex;
     justify-content: center;
     align-items: end;
     padding: 0.5em 0;
+    animation: opacityChangeAnimation 0.5s ease-in;
+    -webkit-animation: opacityChangeAnimation 0.5s ease-in;
 }
-.mobilemenulistitem{
+
+.mobilemenulistitem {
     background: var(--navColour);
     list-style: none;
     border-color: #0000;
     margin: 0.4em 0;
     padding: 0.2em 0.5em;
 }
+
 .mobilemenulistitem a {
     font-size: 1rem;
     color: var(--colourText);
