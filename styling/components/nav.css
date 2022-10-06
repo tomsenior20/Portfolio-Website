@@ -1,12 +1,14 @@
 nav{
     position: fixed;
     top: 0;
+    width: calc(100% - 1rem);
     background: var(--navColour);
     padding: 0.5em 0;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    z-index: 1;
 }
 #navigation{
     display: flex;
@@ -22,7 +24,8 @@ nav{
 .navigationNameContainer h1{
     font-size: calc(1.2rem  + (1.5 - 1.2) * ((100vw - 250px) / (2500 - 250)));
     font-family: sans-serif;
-    font-weight: 700;
+    font-weight: 500;
+    font-style: italic;
     color:var(--colourText);
     line-height: 1.2;
 }
@@ -54,6 +57,7 @@ nav{
     font-weight: 500;
     font-size: calc(1.3rem  + (1.8 - 1.2) * ((100vw - 250px) / (2500 - 250)));
     line-height: 1.2;
+    font-style: italic;
 }
 
 /* Hamburger Menu css */

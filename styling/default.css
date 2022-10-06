@@ -5,12 +5,22 @@
 }
 
 :root{
-    --homeColour: rgba(248, 248, 248, 0.9);
+    --homeColour: #ffffff;
     --navColour: rgba(5, 83, 201, 0.9);
     --colourText: rgba(255, 255, 255, 0.9);
 }
 
 html, body{
     background-color: var(--homeColour);
-    width: 100%;
+    max-width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }

@@ -1,55 +1,89 @@
-.firstSection{
-    background: radial-gradient(at left top, rgba(0, 93, 233, 0.904) 80%, #ffffff 20%);
-    border-bottom: 1px solid black;
+/*  First Section */
+
+.firstSection {
+    background: radial-gradient(at top left, rgba(2, 50, 205, 1) 90%, rgba(0, 109, 237, 1) 50%);
     overflow: hidden;
 }
-.test{
-    padding:8em 0;
+
+.firstSectionContainer {
+    padding: 8em 0;
     background: transparent;
     overflow: hidden;
 }
-.intoTextContainer{
+
+.intoTextContainer {
     display: flex;
     flex-direction: column;
     padding: 1em 1em;
 }
-.introText{
+
+.introText {
     font-size: calc(3em + (2.4 - 2) * ((100vw - 250px) / (1500 - 300)));
     font-family: sans-serif;
     color: var(--colourText);
+    line-height: 2;
+    font-weight: 400;
+    font-style: italic;
 }
 
-.mainImageContainer {
+
+/* About Me container */
+
+.aboutMeContainer {
+    position: relative;
     padding: 6em 0;
 }
 
-.subImageContainer{
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+.aboutMeSubContainer {
+    padding: 1rem 2rem;
+    width: calc(100vw - 200px);
+    margin: 1rem auto;
 }
 
-.imageColumn{
-    padding:2rem;
+.aboutMeColumn {
+    padding: 2rem;
+    display: grid;
+    place-items: center;
 }
 
-.firstImage{
+.firstImage {
     height: 400px;
     width: 400px;
     padding: 3em;
-    border-radius: 5em 3em 3em 4em;
+    border-radius: 5em 8em 3em 8em;
     border: 1px solid black;
-
+    -webkit-border-radius: 5em 8em 3em 8em;
+    -moz-border-radius: 5em 8em 3em 8em;
+    -ms-border-radius: 5em 8em 3em 8em;
+    -o-border-radius: 5em 8em 3em 8em;
 }
 
-@media  (min-width:200px) and (max-width:800px){
-    .imageColumn{
+.aboutMeText {
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: calc(1rem + 1vw);
+    font-style: italic;
+    padding: 1rem 2rem;
+    margin: auto;
+    text-align: left;
+}
+
+
+/* Media Queries */
+
+@media (min-width:200px) and (max-width:800px) {
+    .imageColumn {
         padding-right: calc(100vw - 1rem);
         padding-left: calc(100vw - 1rem);
     }
-    .firstImage{
-        width:200px;
-        height:200px;
+    .firstImage {
+        width: 200px;
+        height: 200px;
         margin: auto;
+    }
+    .aboutMeSubContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }

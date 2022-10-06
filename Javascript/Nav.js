@@ -45,10 +45,10 @@ setNavigationListDisplay = (currentscreensize) => {
 
 mobileMenuButtonClick = () => {
     var menuStyle = document.getElementById('mobilemenu');
-    var mainContainerStyling = document.getElementById('test')
+    var mainContainerStyling = document.getElementById('firstSectionContainer')
     if (menuStyle.style.display == 'none') {
         menuStyle.style.display = 'flex';
-        mainContainerStyling.style.padding = '16em 0';
+        mainContainerStyling.style.padding = '20em 0 10em';
         menuStyle.innerHTML = `<div class='mobilemenulist col h-auto' id="mobilemenulist">
             <ul class="w-100 px-0 my-0">
                 <li class='mobilemenulistitem border border-1'>
@@ -64,7 +64,7 @@ mobileMenuButtonClick = () => {
         </div>`;
     } else {
         menuStyle.style.display = 'none';
-        mainContainerStyling.style.padding = '8em 0';
+        mainContainerStyling.style.padding = '10em 0';
     }
 };
 
