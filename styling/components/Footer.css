@@ -1,10 +1,10 @@
 footer {
-    background-color: var(--navColour);
+    background-color: var(--footerColour);
     overflow: hidden;
-    margin: 2rem 0 0 0;
     position: relative;
     bottom: 0;
     z-index: 2;
+    margin: 0.5em 0 0 0;
 }
 
 footer col {
@@ -12,14 +12,11 @@ footer col {
 }
 
 footer h2 {
-    font-size: calc(1em + 1vmin);
+    font: italic normal 500 calc(1.2rem + (1.5 - 1.2) * ((100vw - 250px) / (2500 - 250))) / 1.2 san-serif;
     padding: calc(0.5vh + 1vmin);
     margin: 0;
     color: var(--colourText);
-    font-size: calc(1.2rem + (1.5 - 1.2) * ((100vw - 250px) / (2500 - 250)));
-    font-style: italic;
-    font-weight: 500;
-    line-height: 1.2;
+    letter-spacing: 1px;
 }
 
 
@@ -31,5 +28,9 @@ footer h2 {
     }
     .col {
         padding: 0.5em 0.2em;
+    }
+    footer {
+        position: relative;
+        bottom: 0;
     }
 }

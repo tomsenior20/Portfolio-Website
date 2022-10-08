@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.useLocalIp": true,
+    "files.autoSaveDelay": 600,
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": false,
+    "html.format.endWithNewline": true
+}

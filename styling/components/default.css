@@ -6,8 +6,9 @@
 
 :root {
     --homeColour: #ffffff;
-    --navColour: rgba(5, 83, 201, 0.9);
+    --navColour: rgba(0, 93, 231, 0.9);
     --colourText: rgba(255, 255, 255, 0.9);
+    --footerColour: rgba(2, 101, 250, 0.9);
 }
 
 html,

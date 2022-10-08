@@ -8,8 +8,8 @@
     <title>Home Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="/styling/default.css">
-    <link rel="stylesheet" href="/styling/pages/index.css">
+    <link rel="stylesheet" href="/styling/components/default.css">
+    <link rel="stylesheet" href="/styling/pages/Home.css">
     <link rel="stylesheet" href="/styling/components/nav.css">
     <link rel="stylesheet" href="/styling/components/Footer.css">
 </head>
@@ -41,7 +41,6 @@
             </div>
         </div>
     </div>
-    </div>
     <!-- About Me Section -->
     <div class="aboutMeContainer">
         <div class="aboutMeSubContainer row">
@@ -49,14 +48,31 @@
                 <img src="/images/idea.jpeg" alt="ideaImage" class="p-3 firstImage">
             </div>
             <div class="col aboutMeColumn">
-                <p class="aboutMeText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos repudiandae, odit ratione non quisquam necessitatibus aspernatur voluptate perferendis assumenda?
+                <p class="aboutMeText">Welcome to my page, this page is just to demonstrate my skills whilst i undertake my journey into software engineering, I will be using this as a demonstation to how my Front end Development skills will progress.
                 </p>
             </div>
         </div>
     </div>
-    <div class="container-fluid h-100">
-        <div class="test">
-            <h2>test</h2>
+    <div class="informationAboutMeContainer">
+        <div class="row">
+            <div class="introContainer col">
+                <h3 class="experienceIntoText">Over the years i have gained the following experience from the below mentioned roles
+                </h3>
+            </div>
+        </div>
+        <div class="row workExperienceContainer">
+            <div class="previousWorkExperience col">
+                <h1 class="companyName">McDonalds</h1>
+                <p class="jobTitle">Shift Manager</p>
+            </div>
+            <div class="previousWorkExperience col">
+                <h1 class="companyName">Atos</h1>
+                <p class="jobTitle">1st Line Support</p>
+            </div>
+            <div class="previousWorkExperience col">
+                <h1 class="companyName">Worldline</h1>
+                <p class="jobTitle">Application Developer</p>
+            </div>
         </div>
     </div>
     <!-- Footer -->
@@ -70,8 +86,8 @@
             </div>
         </div>
     </footer>
-    <script src="/Javascript/Nav.js"></script>
-    <script src="/Javascript/Footer.js"></script>
+    <!-- JS Script Tags -->
+    <script src="/Javascript/components/Nav.js"></script>
+    <script src="/Javascript/pages/Home.js"></script>
+    <script src="/Javascript/components/Footer.js"></script>
 </body>
-
-</html>
