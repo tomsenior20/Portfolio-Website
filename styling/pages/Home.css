@@ -57,6 +57,35 @@
         .introContainer {
             width: calc(100vw - 20px);
         }
+        /* Work Experience */
+        
+        .revealWorkExperienceContainer {
+            position: relative;
+            z-index: 0;
+            display: none;
+            padding: 5rem 0;
+            display: grid;
+            place-content: center;
+            margin: 0 0 50px 0;
+        }
+        
+        .revealbuttoncontainer {
+            padding: 1rem;
+        }
+        
+        .revealExperienceButton {
+            z-index: 1;
+            position: relative;
+            background-color: var(--navColour);
+            padding: 10px 15px;
+            font: italic normal 400 calc(1rem + 1vw) / 1.5 'Garamond', serif;
+            color: var(--colourText);
+            border-radius: 1rem;
+            -webkit-border-radius: 1rem;
+            -moz-border-radius: 1rem;
+            -ms-border-radius: 1rem;
+            -o-border-radius: 1rem;
+        }
         
         .experienceIntoText {
             font: italic normal 300 calc(1vw + 1rem) / normal 'Garamond', serif;
@@ -81,6 +110,7 @@
         }
         
         .workExperienceContainer {
+            display: none;
             margin: 1rem !important;
         }
         
