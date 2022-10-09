@@ -5,7 +5,6 @@ window.addEventListener('load', () => {
     localStorage.setItem('screensize', screensize);
     setNavigationListDisplay(screensize);
     localStorage.setItem('PageLoaded', window.location.pathname);
-    showMainNavHideElement();
 });
 
 window.addEventListener('resize', () => {
@@ -29,6 +28,7 @@ setNavigationListDisplay = (currentscreensize) => {
             </li>
             </ul>`
         navigationListDisplayContainer.innerHTML = html;
+        showMainNavHideElement();
     } else {
         const mobileinner = `
             <button id="hamburgermenu" onclick=mobileMenuButtonClick()>
