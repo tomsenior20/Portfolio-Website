@@ -5,6 +5,7 @@ window.addEventListener('load', () => {
     localStorage.setItem('screensize', screensize);
     setNavigationListDisplay(screensize);
     localStorage.setItem('PageLoaded', window.location.pathname);
+    showMainNavHideElement();
 });
 
 window.addEventListener('resize', () => {
@@ -63,4 +64,41 @@ mobileMenuButtonClick = () => {
         menuStyle.setAttribute('style', 'display: none;animation: opacityChangeAnimation 4s ease-out;');
         mainContainerStyling.setAttribute('style', 'padding:10em 0;');
     }
+    showHideMobileElement();
 };
+
+showMainNavHideElement = () => {
+    var pgLoaded = localStorage.getItem('PageLoaded');
+    // Loads Page loaded which is saved in local and hides the pages nav option based of page loaded
+    switch (pgLoaded) {
+        case '/Home.html':
+            document.getElementById('homelink').style.display = 'none';
+            break;
+        case '/Projects.html':
+            document.getElementById('projectlink').style.display = 'none';
+            break;
+        case '/Contact.html':
+            document.getElementById('contactlink').style.display = 'none';
+        default:
+            return;
+            break;
+    }
+}
+
+showHideMobileElement = () => {
+    var pgLoaded = localStorage.getItem('PageLoaded');
+    // Button Click for mobile elements to get shown/hid
+    switch (pgLoaded) {
+        case '/Home.html':
+            document.getElementById('mobilehomelink').style.display = 'none';
+            break;
+        case '/Projects.html':
+            document.getElementById('mobileprojectlink').style.display = 'none';
+            break;
+        case '/Contact.html':
+            document.getElementById('mobilecontactlink').style.display = 'none';
+        default:
+            return;
+            break;
+    }
+}

@@ -24,7 +24,7 @@ nav {
 }
 
 .navigationNameContainer h1 {
-    font: italic normal 500 calc(1.2rem + (1.5 - 1.2) * ((100vw - 250px) / (2500 - 250)))/1.2 san-serif;
+    font: italic normal 500 calc(100% + 2px)/1.2 san-serif;
     color: var(--colourText);
     letter-spacing: 1px;
 }
@@ -59,7 +59,7 @@ nav {
 .navigationListContainer a {
     color: var(--colourText);
     text-decoration: none;
-    font: italic normal 500 calc(1.3rem + (1.8 - 1.2) * ((100vw - 250px) / (2500 - 250)))/1.2 san-serif;
+    font: italic normal 500 calc(100% + 2px)/1.2 san-serif;
     letter-spacing: 1px;
 }
 
@@ -134,6 +134,6 @@ nav {
 }
 
 .introText {
-    font: italic normal 400 calc(3em + (2.4 - 2) * ((100vw - 250px) / (1500 - 300)))/2 san-serif;
+    font: italic normal 400 calc(2rem + 3.5vw)/2 san-serif;
     color: var(--colourText);
 }
