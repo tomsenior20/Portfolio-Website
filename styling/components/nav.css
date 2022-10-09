@@ -24,7 +24,7 @@ nav {
 }
 
 .navigationNameContainer h1 {
-    font: italic normal 500 calc(100% + 2px)/1.2 san-serif;
+    font: italic normal 500 calc(100% + 2px)/ 16px "Times New Roman", serif;
     color: var(--colourText);
     letter-spacing: 1px;
 }
@@ -47,9 +47,10 @@ nav {
     display: flex;
 }
 
-#homelink,
-#contactlink,
-#projectlink {
+.homelink,
+.contactlink,
+.projectlink {
+    background: transparent;
     display: block;
     margin: 0 1rem;
     color: var(--colourText);
@@ -57,9 +58,10 @@ nav {
 }
 
 .navigationListContainer a {
+    background: transparent;
     color: var(--colourText);
     text-decoration: none;
-    font: italic normal 500 calc(100% + 2px)/1.2 san-serif;
+    font: italic normal 500 calc(100% + 2px)/1.2 "Times New Roman", serif;
     letter-spacing: 1px;
 }
 
@@ -92,20 +94,19 @@ nav {
     -webkit-animation: opacityChangeAnimation 0.5s ease-in;
 }
 
-#mobilehomelink,
-#mobilecontactlink,
-#mobileprojectlink {
+.mobilemenulistitem,
+.mobilemenulistitem,
+.mobilemenulistitem {
     display: flex;
-    background: var(--navColour);
     list-style: none;
     border-color: #0000;
     margin: 0.4em 0;
     padding: 0.2em 0.5em;
 }
 
-#mobilehomelink a,
-#mobilecontactlink a,
-#mobileprojectlink a {
+.mobilemenulistitem a,
+.mobilemenulistitem a,
+.mobilemenulistitem a {
     font-size: 1rem;
     color: var(--colourText);
     line-height: normal;
@@ -116,7 +117,8 @@ nav {
 /*  First Section */
 
 .firstSection {
-    background: radial-gradient(at top left, rgba(2, 50, 205, 1) 90%, rgba(0, 109, 237, 1) 50%);
+    position: relative;
+    background: radial-gradient(at top left, rgba(25, 63, 10, 0.9) 90%, rgb(224, 210, 210, 0.7) 50%);
     overflow: hidden;
     z-index: 1;
 }
@@ -134,6 +136,6 @@ nav {
 }
 
 .introText {
-    font: italic normal 400 calc(2rem + 3.5vw)/2 san-serif;
+    font: italic normal 400 calc(2rem + 3.5vw)/2 'Garamond', serif;
     color: var(--colourText);
 }

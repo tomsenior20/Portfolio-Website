@@ -17,13 +17,13 @@ setNavigationListDisplay = (currentscreensize) => {
     var navigationListDisplayContainer = document.getElementById('navigationListContainer');
     if (currentscreensize > 800) {
         const html = `<ul class='my-0'>
-            <li id='homelink'>
+            <li class='homelink' id='homelink'>
                 <a href="./Home.html">Home</a>
             </li>
-            <li id='contactlink'>
+            <li class='contactlink' id='contactlink'>
                 <a href="./Contact.html">Contact</a>
             </li>
-            <li id='projectlink'>
+            <li class='projectlink' id='projectlink'>
                 <a href="./Projects.html">Projects</a>
             </li>
             </ul>`
@@ -49,13 +49,13 @@ mobileMenuButtonClick = () => {
         mainContainerStyling.setAttribute('style', 'padding:18em 0 8em;');
         menuStyle.innerHTML = `<div class='mobilemenulist col h-auto' id="mobilemenulist">
             <ul class="w-100 px-0 my-0">
-                <li class='mobilemenulistitem border border-1' id='mobilehomelink'>
+                <li class='mobilemenulistitem border border-1' id='homelink'>
                     <a href="./Home.html">Home</a>
                 </li>
-                <li class='mobilemenulistitem border border-1' id='mobilecontactlink'>
+                <li class='mobilemenulistitem border border-1' id='contactlink'>
                     <a href="./Contact.html">Contact</a>
                 </li>
-                <li class='mobilemenulistitem border border-2' id='mobileprojectlink'>
+                <li class='mobilemenulistitem border border-2' id='projectlink'>
                     <a href="./Projects.html">Projects</a>
                 </li>
             </ul>
@@ -64,7 +64,7 @@ mobileMenuButtonClick = () => {
         menuStyle.setAttribute('style', 'display: none;animation: opacityChangeAnimation 4s ease-out;');
         mainContainerStyling.setAttribute('style', 'padding:10em 0;');
     }
-    showHideMobileElement();
+    showMainNavHideElement();
 };
 
 showMainNavHideElement = () => {
@@ -79,24 +79,6 @@ showMainNavHideElement = () => {
             break;
         case '/Contact.html':
             document.getElementById('contactlink').style.display = 'none';
-        default:
-            return;
-            break;
-    }
-}
-
-showHideMobileElement = () => {
-    var pgLoaded = localStorage.getItem('PageLoaded');
-    // Button Click for mobile elements to get shown/hid
-    switch (pgLoaded) {
-        case '/Home.html':
-            document.getElementById('mobilehomelink').style.display = 'none';
-            break;
-        case '/Projects.html':
-            document.getElementById('mobileprojectlink').style.display = 'none';
-            break;
-        case '/Contact.html':
-            document.getElementById('mobilecontactlink').style.display = 'none';
         default:
             return;
             break;
